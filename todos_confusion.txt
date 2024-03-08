@@ -1,0 +1,21 @@
+1)First we created 'To_Dos' object in app.js -> 
+2)Then we imported <ToDos />(ToDos.js file) in return function ->
+3)declared a variable 'todos' ={To_Dos} in <ToDos />
+4)Then we created a react function in ToDos.js component
+5)We imported <TodoItem /> in this fucntion
+ ->and declared 'todo' variable in it 
+ ->set props.todos[0]
+
+In TodoItem.js
+6)create a function TodoItems and call({todo}) variable from its parent file(ToDos.js file)
+7)In this function give todo.title and todo.desc
+
+
+App.js  <ToDos todos={To_Dos}/>
+  |
+  V
+ToDos.js <TodoItems todo={props.todos[0]} />
+  |
+  V
+TodoItems.js <h4>{todo.title}</h4>
+             <p>{todo.desc}</p>
